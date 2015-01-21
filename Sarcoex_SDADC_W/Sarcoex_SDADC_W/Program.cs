@@ -16,7 +16,7 @@ namespace Sarcoex_SDADC_W
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ChangeDevice());
         }
     }
 }

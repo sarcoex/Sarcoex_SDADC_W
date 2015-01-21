@@ -1,7 +1,15 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sarcoex_SDADC_W.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HeadsetDevice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Headset</Value>
+    </Setting>
+    <Setting Name="TVDevice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TV</Value>
+    </Setting>
+    <Setting Name="SpeakersDevice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Speakers</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

@@ -1,6 +1,6 @@
 ﻿namespace Sarcoex_SDADC_W
 {
-    partial class NewDeviceWizard
+    partial class ChangeDevice
     {
         /// <summary>
         /// Required designer variable.
@@ -56,6 +56,7 @@
             this.buttonHeadset.TabIndex = 0;
             this.buttonHeadset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonHeadset.UseVisualStyleBackColor = true;
+            this.buttonHeadset.Click += new System.EventHandler(this.buttonHeadset_Click);
             // 
             // buttonTV
             // 
@@ -67,6 +68,7 @@
             this.buttonTV.TabIndex = 1;
             this.buttonTV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonTV.UseVisualStyleBackColor = true;
+            this.buttonTV.Click += new System.EventHandler(this.buttonTV_Click);
             // 
             // buttonSpeakers
             // 
@@ -78,8 +80,9 @@
             this.buttonSpeakers.TabIndex = 2;
             this.buttonSpeakers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonSpeakers.UseVisualStyleBackColor = true;
+            this.buttonSpeakers.Click += new System.EventHandler(this.buttonSpeakers_Click);
             // 
-            // NewDeviceWizard
+            // ChangeDevice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +91,8 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(424, 400);
             this.MinimumSize = new System.Drawing.Size(424, 400);
-            this.Name = "NewDeviceWizard";
-            this.Text = "Form2";
+            this.Name = "ChangeDevice";
+            this.Text = "Change Device";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
