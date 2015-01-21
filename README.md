@@ -1,6 +1,8 @@
 # Sarcoex_SDADC_W
 Sarcoex's Simple Default Audio Device Changer for Windows
 
+![v0.0.1 Screenshot](http://i.imgur.com/jiPWRdt.jpg)
+
 1 DESCRIPTION
 
 Sarcoex's Simple Default Audio Device Changer for Windows is a simple software to easy change the default sound device (playback).
