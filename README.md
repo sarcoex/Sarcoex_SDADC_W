@@ -33,14 +33,25 @@ So in conclusion
 If you for any reason you don't want (or can't) rename playback audio devices, you can edit the prefixed names in the config file instead.
 
 Just open the file "Sarcoex_SDADC_W.exe.config" with Notepad or similar text editor software (I personally prefer Notepad++, with the "monstreous" icon).
-Look for the section "<applicationSettings>"->"<Sarcoex_SDADC_W.Properties.Settings>"
+Look for the section 
+```XML
+<applicationSettings>
+	<Sarcoex_SDADC_W.Properties.Settings>
+
+	</Sarcoex_SDADC_W.Properties.Settings>
+</applicationSettings>
+```
 There you find some settings which follows this syntax:
+```XML
 <setting name="{DeviceNameVariable}" serializeAs="String">
 	<value>{NameOfTheDevice}</value>
 </setting>
+```
 
 It's very important that you only changes the value between the <value> tag.
 Example:
+```XML
 <setting name="HeadsetDevice" serializeAs="String">
 	<value>Logitech G930</value>
 </setting>
+```
