@@ -32,6 +32,7 @@
             this.buttonHeadset = new System.Windows.Forms.Button();
             this.buttonTV = new System.Windows.Forms.Button();
             this.buttonSpeakers = new System.Windows.Forms.Button();
+            this.listPlaybackDevices = new System.Windows.Forms.ListBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,14 +41,15 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonHeadset);
             this.flowLayoutPanel1.Controls.Add(this.buttonTV);
             this.flowLayoutPanel1.Controls.Add(this.buttonSpeakers);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(402, 344);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(402, 217);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // buttonHeadset
             // 
+            this.buttonHeadset.BackColor = System.Drawing.SystemColors.Control;
             this.buttonHeadset.BackgroundImage = global::Sarcoex_SDADC_W.Properties.Resources.audio_headset;
             this.buttonHeadset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonHeadset.Location = new System.Drawing.Point(3, 3);
@@ -55,7 +57,7 @@
             this.buttonHeadset.Size = new System.Drawing.Size(128, 128);
             this.buttonHeadset.TabIndex = 0;
             this.buttonHeadset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonHeadset.UseVisualStyleBackColor = true;
+            this.buttonHeadset.UseVisualStyleBackColor = false;
             this.buttonHeadset.Click += new System.EventHandler(this.buttonHeadset_Click);
             // 
             // buttonTV
@@ -82,11 +84,23 @@
             this.buttonSpeakers.UseVisualStyleBackColor = true;
             this.buttonSpeakers.Click += new System.EventHandler(this.buttonSpeakers_Click);
             // 
+            // listPlaybackDevices
+            // 
+            this.listPlaybackDevices.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listPlaybackDevices.Enabled = false;
+            this.listPlaybackDevices.FormattingEnabled = true;
+            this.listPlaybackDevices.ItemHeight = 20;
+            this.listPlaybackDevices.Location = new System.Drawing.Point(0, 220);
+            this.listPlaybackDevices.Name = "listPlaybackDevices";
+            this.listPlaybackDevices.Size = new System.Drawing.Size(402, 124);
+            this.listPlaybackDevices.TabIndex = 1;
+            // 
             // ChangeDevice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 344);
+            this.Controls.Add(this.listPlaybackDevices);
             this.Controls.Add(this.flowLayoutPanel1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(424, 400);
@@ -104,5 +118,6 @@
         private System.Windows.Forms.Button buttonHeadset;
         private System.Windows.Forms.Button buttonTV;
         private System.Windows.Forms.Button buttonSpeakers;
+        private System.Windows.Forms.ListBox listPlaybackDevices;
     }
 }
