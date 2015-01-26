@@ -17,10 +17,32 @@ namespace Sarcoex_SDADC_W
     public partial class ChangeDevice : Form
     {
         private string currentDevice = "";
+        Profile[] profiles;
 
         public ChangeDevice()
         {
             InitializeComponent();
+        }
+
+        private void Init()
+        {
+            RefreshDevices();
+            LoadProfiles();
+        }
+
+        private void LoadProfiles()
+        {
+            if (!System.IO.Directory.Exists("./profiles"))
+                System.IO.Directory.CreateDirectory("./profiles");
+        }
+
+        private void SaveProfiles()
+        {
+
+        }
+
+        private void RefreshDevices()
+        {
             listPlaybackDevices.Items.Clear();
             listPlaybackDevices.Items.AddRange(FetchPlaybackDevices());
             UpdateCurrentDevice(currentDevice);

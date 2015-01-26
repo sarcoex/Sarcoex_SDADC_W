@@ -33,7 +33,10 @@
             this.buttonTV = new System.Windows.Forms.Button();
             this.buttonSpeakers = new System.Windows.Forms.Button();
             this.listPlaybackDevices = new System.Windows.Forms.ListBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.profilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -42,7 +45,7 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonTV);
             this.flowLayoutPanel1.Controls.Add(this.buttonSpeakers);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 33);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(402, 217);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -95,6 +98,23 @@
             this.listPlaybackDevices.Size = new System.Drawing.Size(402, 124);
             this.listPlaybackDevices.TabIndex = 1;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profilesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(402, 33);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // profilesToolStripMenuItem
+            // 
+            this.profilesToolStripMenuItem.Name = "profilesToolStripMenuItem";
+            this.profilesToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
+            this.profilesToolStripMenuItem.Text = "Profiles";
+            // 
             // ChangeDevice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -102,13 +122,17 @@
             this.ClientSize = new System.Drawing.Size(402, 344);
             this.Controls.Add(this.listPlaybackDevices);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(424, 400);
             this.MinimumSize = new System.Drawing.Size(424, 400);
             this.Name = "ChangeDevice";
             this.Text = "Change Device";
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -119,5 +143,7 @@
         private System.Windows.Forms.Button buttonTV;
         private System.Windows.Forms.Button buttonSpeakers;
         private System.Windows.Forms.ListBox listPlaybackDevices;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem profilesToolStripMenuItem;
     }
 }
