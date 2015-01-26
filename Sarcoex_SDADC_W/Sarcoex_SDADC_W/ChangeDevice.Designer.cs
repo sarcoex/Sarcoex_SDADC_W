@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.devicesFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonHeadset = new System.Windows.Forms.Button();
             this.buttonTV = new System.Windows.Forms.Button();
             this.buttonSpeakers = new System.Windows.Forms.Button();
             this.listPlaybackDevices = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.profilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.devicesFlowLayout.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // devicesFlowLayout
             // 
-            this.flowLayoutPanel1.Controls.Add(this.buttonHeadset);
-            this.flowLayoutPanel1.Controls.Add(this.buttonTV);
-            this.flowLayoutPanel1.Controls.Add(this.buttonSpeakers);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 33);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(402, 217);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.devicesFlowLayout.Controls.Add(this.buttonHeadset);
+            this.devicesFlowLayout.Controls.Add(this.buttonTV);
+            this.devicesFlowLayout.Controls.Add(this.buttonSpeakers);
+            this.devicesFlowLayout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.devicesFlowLayout.Location = new System.Drawing.Point(0, 33);
+            this.devicesFlowLayout.Name = "devicesFlowLayout";
+            this.devicesFlowLayout.Size = new System.Drawing.Size(778, 381);
+            this.devicesFlowLayout.TabIndex = 0;
             // 
             // buttonHeadset
             // 
@@ -93,9 +93,9 @@
             this.listPlaybackDevices.Enabled = false;
             this.listPlaybackDevices.FormattingEnabled = true;
             this.listPlaybackDevices.ItemHeight = 20;
-            this.listPlaybackDevices.Location = new System.Drawing.Point(0, 220);
+            this.listPlaybackDevices.Location = new System.Drawing.Point(0, 420);
             this.listPlaybackDevices.Name = "listPlaybackDevices";
-            this.listPlaybackDevices.Size = new System.Drawing.Size(402, 124);
+            this.listPlaybackDevices.Size = new System.Drawing.Size(778, 124);
             this.listPlaybackDevices.TabIndex = 1;
             // 
             // menuStrip1
@@ -105,7 +105,7 @@
             this.profilesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(402, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(778, 33);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -119,16 +119,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 344);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.listPlaybackDevices);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.devicesFlowLayout);
             this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(424, 400);
-            this.MinimumSize = new System.Drawing.Size(424, 400);
+            this.MaximumSize = new System.Drawing.Size(4000, 4000);
+            this.MinimumSize = new System.Drawing.Size(400, 400);
             this.Name = "ChangeDevice";
             this.Text = "Change Device";
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.devicesFlowLayout.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -138,7 +138,7 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel devicesFlowLayout;
         private System.Windows.Forms.Button buttonHeadset;
         private System.Windows.Forms.Button buttonTV;
         private System.Windows.Forms.Button buttonSpeakers;

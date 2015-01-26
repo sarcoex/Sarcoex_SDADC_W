@@ -11,5 +11,8 @@
     <Setting Name="SpeakersDevice" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Speakers</Value>
     </Setting>
+    <Setting Name="Use64Bit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

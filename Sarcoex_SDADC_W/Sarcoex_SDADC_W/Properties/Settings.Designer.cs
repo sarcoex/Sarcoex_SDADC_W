@@ -49,5 +49,17 @@ namespace Sarcoex_SDADC_W.Properties {
                 return ((string)(this["SpeakersDevice"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Use64Bit {
+            get {
+                return ((bool)(this["Use64Bit"]));
+            }
+            set {
+                this["Use64Bit"] = value;
+            }
+        }
     }
 }
