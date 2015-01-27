@@ -1,0 +1,156 @@
+<monitors app-version="1.5.0.0" version="3" topology="Clone">
+    <!--The version identifies the format of the configuration file.-->
+    <!--topology=-->
+    <!--Internal-->
+    <!--Clone-->
+    <!--Extend-->
+    <!--External-->
+    <!--monitor:-->
+    <!--The id attribute must be specified.-->
+    <monitor id="1048849" adapterHigh="0" adapterLow="49028">
+        <name>S24D340</name>
+        <!--source: the origin of the video signal-->
+        <source id="0">
+            <name>\\.\DISPLAY1</name>
+            <path>\\?\PCI#VEN_10DE&amp;DEV_1380&amp;SUBSYS_288A19DA&amp;REV_A2#4&amp;2fe1a02d&amp;0&amp;0008#{5b45201d-f2f2-4f3b-85bb-30ff1f953599}</path>
+        </source>
+        <size width="1920" height="1080"/>
+        <position left="0" top="0"/>
+        <!--8bpp-->
+        <!--16bpp-->
+        <!--24bpp-->
+        <!--32bpp-->
+        <!--Non-GDI-->
+        <color value="32bpp"/>
+        <!--Identity-->
+        <!--90-degreesCW-->
+        <!--180-degreesCW-->
+        <!--270-degreesCW-->
+        <rotation value="Identity"/>
+        <!--Identity-->
+        <!--Centered-->
+        <!--Stretched-->
+        <!--Aspect Ratio Centered Max-->
+        <!--Custom-->
+        <!--Preferred-->
+        <scaling value="Aspect Ratio Centered Max"/>
+        <!--A value of 0/0 represents the optimal refresh rate. Scan-line-order must be Unspecified.-->
+        <refresh numerator="60000" denominator="1001"/>
+        <!--Unspecified-->
+        <!--Progressive-->
+        <!--Interlaced (upper field first)-->
+        <!--Interlaced (lower field first)-->
+        <scanlineorder value="Progressive"/>
+    </monitor>
+    <!--monitor:-->
+    <!--The id attribute must be specified.-->
+    <monitor id="1048848" adapterHigh="0" adapterLow="49028">
+        <name>SAMSUNG</name>
+        <!--source: the origin of the video signal-->
+        <source id="0">
+            <name>\\.\DISPLAY1</name>
+            <path>\\?\PCI#VEN_10DE&amp;DEV_1380&amp;SUBSYS_288A19DA&amp;REV_A2#4&amp;2fe1a02d&amp;0&amp;0008#{5b45201d-f2f2-4f3b-85bb-30ff1f953599}</path>
+        </source>
+        <size width="1920" height="1080"/>
+        <position left="0" top="0"/>
+        <!--8bpp-->
+        <!--16bpp-->
+        <!--24bpp-->
+        <!--32bpp-->
+        <!--Non-GDI-->
+        <color value="32bpp"/>
+        <!--Identity-->
+        <!--90-degreesCW-->
+        <!--180-degreesCW-->
+        <!--270-degreesCW-->
+        <rotation value="Identity"/>
+        <!--Identity-->
+        <!--Centered-->
+        <!--Stretched-->
+        <!--Aspect Ratio Centered Max-->
+        <!--Custom-->
+        <!--Preferred-->
+        <scaling value="Aspect Ratio Centered Max"/>
+        <!--A value of 0/0 represents the optimal refresh rate. Scan-line-order must be Unspecified.-->
+        <refresh numerator="60000" denominator="1001"/>
+        <!--Unspecified-->
+        <!--Progressive-->
+        <!--Interlaced (upper field first)-->
+        <!--Interlaced (lower field first)-->
+        <scanlineorder value="Progressive"/>
+    </monitor>
+    <!--monitor:-->
+    <!--The id attribute must be specified.-->
+    <monitor id="16843008" adapterHigh="0" adapterLow="51146">
+        <name>SyncMaster</name>
+        <!--source: the origin of the video signal-->
+        <source id="0">
+            <name>\\.\DISPLAY5</name>
+            <path>\\?\PCI#VEN_8086&amp;DEV_0412&amp;SUBSYS_85341043&amp;REV_06#3&amp;11583659&amp;1&amp;10#{5b45201d-f2f2-4f3b-85bb-30ff1f953599}</path>
+        </source>
+        <size width="1280" height="1024"/>
+        <position left="3840" top="56"/>
+        <!--8bpp-->
+        <!--16bpp-->
+        <!--24bpp-->
+        <!--32bpp-->
+        <!--Non-GDI-->
+        <color value="32bpp"/>
+        <!--Identity-->
+        <!--90-degreesCW-->
+        <!--180-degreesCW-->
+        <!--270-degreesCW-->
+        <rotation value="Identity"/>
+        <!--Identity-->
+        <!--Centered-->
+        <!--Stretched-->
+        <!--Aspect Ratio Centered Max-->
+        <!--Custom-->
+        <!--Preferred-->
+        <scaling value="Aspect Ratio Centered Max"/>
+        <!--A value of 0/0 represents the optimal refresh rate. Scan-line-order must be Unspecified.-->
+        <refresh numerator="108000000" denominator="1799408"/>
+        <!--Unspecified-->
+        <!--Progressive-->
+        <!--Interlaced (upper field first)-->
+        <!--Interlaced (lower field first)-->
+        <scanlineorder value="Progressive"/>
+    </monitor>
+    <!--monitor:-->
+    <!--The id attribute must be specified.-->
+    <monitor id="50725632" adapterHigh="0" adapterLow="51146">
+        <name>S24D340</name>
+        <!--source: the origin of the video signal-->
+        <source id="1">
+            <name>\\.\DISPLAY6</name>
+            <path>\\?\PCI#VEN_8086&amp;DEV_0412&amp;SUBSYS_85341043&amp;REV_06#3&amp;11583659&amp;1&amp;10#{5b45201d-f2f2-4f3b-85bb-30ff1f953599}</path>
+        </source>
+        <size width="1920" height="1080"/>
+        <position left="1920" top="0"/>
+        <!--8bpp-->
+        <!--16bpp-->
+        <!--24bpp-->
+        <!--32bpp-->
+        <!--Non-GDI-->
+        <color value="32bpp"/>
+        <!--Identity-->
+        <!--90-degreesCW-->
+        <!--180-degreesCW-->
+        <!--270-degreesCW-->
+        <rotation value="Identity"/>
+        <!--Identity-->
+        <!--Centered-->
+        <!--Stretched-->
+        <!--Aspect Ratio Centered Max-->
+        <!--Custom-->
+        <!--Preferred-->
+        <scaling value="Aspect Ratio Centered Max"/>
+        <!--A value of 0/0 represents the optimal refresh rate. Scan-line-order must be Unspecified.-->
+        <refresh numerator="148351648" denominator="2475000"/>
+        <!--Unspecified-->
+        <!--Progressive-->
+        <!--Interlaced (upper field first)-->
+        <!--Interlaced (lower field first)-->
+        <scanlineorder value="Progressive"/>
+    </monitor>
+</monitors>

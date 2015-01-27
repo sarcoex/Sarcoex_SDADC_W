@@ -1,0 +1,22 @@
+v0.0.2
+
+* Profile system implemented
+* Dynamic changing of monitor setup implemented
+* Custom icon support
+
+HOW TO USE THE NEW FEATURES
+
+Profile system:
+
+1. Create a new file in the folder "profiles", name it anyway you like
+2. Follow this simple syntax:
+	<Title of the profile>
+	<The name of the playback device>
+	<The filename of the icon you wish to use (from "Resources" folder)>
+3. Save the file and launch the software (start.bat)
+4. For each new profile you have created you will be prompted with a dialog choice, I suggest you change your monitor setup before closing/accepting the dialog, you can also decline, but no monitor config will be created.
+
+
+Custom icons:
+
+Place all icons you want to use under the "Resources" folder, the images should be 128x128 of size.
