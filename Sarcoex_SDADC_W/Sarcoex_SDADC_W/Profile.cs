@@ -9,6 +9,8 @@ namespace Sarcoex_SDADC_W
 {
     public class Profile
     {
+        public bool HasMonitorConfig { get; set; }
+
         private string _title;
         public string Title
         {

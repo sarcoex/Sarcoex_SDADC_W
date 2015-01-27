@@ -52,40 +52,42 @@
             // 
             // buttonHeadset
             // 
-            this.buttonHeadset.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonHeadset.BackColor = System.Drawing.Color.Red;
             this.buttonHeadset.BackgroundImage = global::Sarcoex_SDADC_W.Properties.Resources.audio_headset;
             this.buttonHeadset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHeadset.Enabled = false;
             this.buttonHeadset.Location = new System.Drawing.Point(3, 3);
             this.buttonHeadset.Name = "buttonHeadset";
             this.buttonHeadset.Size = new System.Drawing.Size(128, 128);
             this.buttonHeadset.TabIndex = 0;
             this.buttonHeadset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonHeadset.UseVisualStyleBackColor = false;
-            this.buttonHeadset.Click += new System.EventHandler(this.buttonHeadset_Click);
             // 
             // buttonTV
             // 
+            this.buttonTV.BackColor = System.Drawing.Color.Red;
             this.buttonTV.BackgroundImage = global::Sarcoex_SDADC_W.Properties.Resources.video_television_3;
             this.buttonTV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonTV.Enabled = false;
             this.buttonTV.Location = new System.Drawing.Point(137, 3);
             this.buttonTV.Name = "buttonTV";
             this.buttonTV.Size = new System.Drawing.Size(128, 128);
             this.buttonTV.TabIndex = 1;
             this.buttonTV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonTV.UseVisualStyleBackColor = true;
-            this.buttonTV.Click += new System.EventHandler(this.buttonTV_Click);
+            this.buttonTV.UseVisualStyleBackColor = false;
             // 
             // buttonSpeakers
             // 
+            this.buttonSpeakers.BackColor = System.Drawing.Color.Red;
             this.buttonSpeakers.BackgroundImage = global::Sarcoex_SDADC_W.Properties.Resources.audio_speaker;
             this.buttonSpeakers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSpeakers.Enabled = false;
             this.buttonSpeakers.Location = new System.Drawing.Point(271, 3);
             this.buttonSpeakers.Name = "buttonSpeakers";
             this.buttonSpeakers.Size = new System.Drawing.Size(128, 128);
             this.buttonSpeakers.TabIndex = 2;
             this.buttonSpeakers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonSpeakers.UseVisualStyleBackColor = true;
-            this.buttonSpeakers.Click += new System.EventHandler(this.buttonSpeakers_Click);
+            this.buttonSpeakers.UseVisualStyleBackColor = false;
             // 
             // listPlaybackDevices
             // 

@@ -16,7 +16,7 @@ namespace Sarcoex_SDADC_W
 {
     public partial class ChangeDevice : Form
     {
-        private string currentDevice = "";
+        private Profile currentDevice;
         Profile[] profiles;
 
         public ChangeDevice()
@@ -166,42 +166,20 @@ namespace Sarcoex_SDADC_W
             }
         }
 
-        private void UpdateCurrentDevice(string device)
+        private void UpdateCurrentDevice(Profile device)
         {
             currentDevice = device;
-            if (currentDevice == Properties.Settings.Default.HeadsetDevice)
+            if (currentDevice != null)
             {
-                buttonHeadset.BackColor = Color.Green;
-                buttonSpeakers.BackColor = SystemColors.Control;
-            buttonTV.BackColor = SystemColors.Control;
-            }
-            else if (currentDevice == Properties.Settings.Default.TVDevice)
-            {
-                buttonHeadset.BackColor = SystemColors.Control;
-                buttonSpeakers.BackColor = SystemColors.Control;
-                buttonTV.BackColor = Color.Green;
-            }
-            else if (currentDevice == Properties.Settings.Default.SpeakersDevice)
-            {
-                buttonHeadset.BackColor = SystemColors.Control;
-                buttonSpeakers.BackColor = Color.Green;
-                buttonTV.BackColor = SystemColors.Control;
-            }
-            else
-            {
-                buttonHeadset.BackColor = SystemColors.Control;
-                buttonSpeakers.BackColor = SystemColors.Control;
-                buttonTV.BackColor = SystemColors.Control;
-            }
-
-            int index = listPlaybackDevices.FindString(currentDevice);
-            if (index > -1)
-            {
-                listPlaybackDevices.SelectedIndex = index;
-            }
-            else
-            {
-                listPlaybackDevices.ClearSelected();
+                int index = listPlaybackDevices.FindString(currentDevice.PlaybackDevice);
+                if (index > -1)
+                {
+                    listPlaybackDevices.SelectedIndex = index;
+                }
+                else
+                {
+                    listPlaybackDevices.ClearSelected();
+                } 
             }
         }
 
@@ -210,24 +188,15 @@ namespace Sarcoex_SDADC_W
             Profile p = ((ProfileButton) sender).profile;
             ChangeTo(p.PlaybackDevice);
             ChangeMonitor(p);
-        }
+            UpdateCurrentDevice(p);
 
-        private void buttonHeadset_Click(object sender, EventArgs e)
-        {
-            ChangeTo(Properties.Settings.Default.HeadsetDevice);
-            UpdateCurrentDevice(Properties.Settings.Default.HeadsetDevice);
-        }
+            foreach (ProfileButton b in devicesFlowLayout.Controls)
+            {
+                if (b != (ProfileButton)sender)
+                    b.BackColor = System.Drawing.SystemColors.Control;
+            }
 
-        private void buttonTV_Click(object sender, EventArgs e)
-        {
-            ChangeTo(Properties.Settings.Default.TVDevice);
-            UpdateCurrentDevice(Properties.Settings.Default.TVDevice);
-        }
-
-        private void buttonSpeakers_Click(object sender, EventArgs e)
-        {
-            ChangeTo(Properties.Settings.Default.SpeakersDevice);
-            UpdateCurrentDevice(Properties.Settings.Default.SpeakersDevice);
+            ((ProfileButton)sender).BackColor = Color.Green;
         }
     }
 }
