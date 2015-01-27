@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.devicesFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonHeadset = new System.Windows.Forms.Button();
             this.buttonTV = new System.Windows.Forms.Button();
@@ -35,8 +36,11 @@
             this.listPlaybackDevices = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.profilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deviceMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.changeMonitorSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.devicesFlowLayout.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.deviceMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // devicesFlowLayout
@@ -117,6 +121,21 @@
             this.profilesToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
             this.profilesToolStripMenuItem.Text = "Profiles";
             // 
+            // deviceMenu
+            // 
+            this.deviceMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.deviceMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changeMonitorSetupToolStripMenuItem});
+            this.deviceMenu.Name = "deviceMenu";
+            this.deviceMenu.Size = new System.Drawing.Size(263, 67);
+            // 
+            // changeMonitorSetupToolStripMenuItem
+            // 
+            this.changeMonitorSetupToolStripMenuItem.Name = "changeMonitorSetupToolStripMenuItem";
+            this.changeMonitorSetupToolStripMenuItem.Size = new System.Drawing.Size(262, 30);
+            this.changeMonitorSetupToolStripMenuItem.Text = "Change monitor setup";
+            this.changeMonitorSetupToolStripMenuItem.Click += new System.EventHandler(this.changeMonitorSetupToolStripMenuItem_Click);
+            // 
             // ChangeDevice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -133,6 +152,7 @@
             this.devicesFlowLayout.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.deviceMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +167,7 @@
         private System.Windows.Forms.ListBox listPlaybackDevices;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem profilesToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip deviceMenu;
+        private System.Windows.Forms.ToolStripMenuItem changeMonitorSetupToolStripMenuItem;
     }
 }

@@ -9,7 +9,10 @@ namespace Sarcoex_SDADC_W
 {
     public class Profile
     {
-        public bool HasMonitorConfig { get; set; }
+        public bool HasMonitorConfig
+        {
+            get { return System.IO.File.Exists("./MonitorConfigs/" + Title); }
+        }
 
         private string _title;
         public string Title

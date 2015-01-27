@@ -45,19 +45,13 @@ namespace Sarcoex_SDADC_W
                 foreach (string s in profiles)
                 {
                     string[] lines = System.IO.File.ReadAllLines(s);
-                    Profile p = Profile.ParseText(lines);
+                    Profile p = Profile.ParseText(lines);            
+
                     ProfileButton b = Profile.GenerateButton(p, new Size(128, 128));
+                    if (!p.HasMonitorConfig)
+                        b.BackColor = Color.DarkRed;
+                    b.ContextMenuStrip = deviceMenu;
                     b.Click += new EventHandler(buttonDevice_CLick);
-
-                    if (!System.IO.File.Exists("./MonitorConfigs/" + p.Title))
-                    {
-                        DialogResult result = MessageBox.Show("No Monitor config found for " + p.Title + ".\nDo you want to use current monitor setup", "No config found", MessageBoxButtons.YesNo);
-
-                        if (result == System.Windows.Forms.DialogResult.Yes)
-                        {
-                            GenerateMonitorSetupConfig(p); 
-                        }
-                    }
 
                     devicesFlowLayout.Controls.Add(b);
                 }
@@ -197,6 +191,37 @@ namespace Sarcoex_SDADC_W
             }
 
             ((ProfileButton)sender).BackColor = Color.Green;
+            
+            // An extra just in case, because sometimes the TV audio ouput isn't shown, 
+            // if connected to the TV with HDMI and the TV display is NOT enabled
+            ChangeTo(p.PlaybackDevice);
+        }
+
+        private void changeMonitorSetupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
+
+            if (menuItem != null)
+            {
+                ContextMenuStrip cms = (ContextMenuStrip) menuItem.GetCurrentParent();
+                ProfileButton sourceClicked = (ProfileButton) cms.SourceControl;
+                DialogResult result = MessageBox.Show("Please adjust to monitor setup you want to use with " + sourceClicked.profile.Title +
+                    "\nPress OK when you are done.", "Monitor configuration", MessageBoxButtons.OK);
+
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    GenerateMonitorSetupConfig(sourceClicked.profile);
+                }
+
+                if (!sourceClicked.profile.HasMonitorConfig)
+                {
+                    sourceClicked.BackColor = Color.DarkRed;
+                }
+                else
+                {
+                    sourceClicked.BackColor = System.Drawing.SystemColors.Control;
+                }
+            }
         }
     }
 }
